@@ -1,0 +1,18 @@
+<div class="container" *ngIf="hero">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <h2 class="card-title">{{hero.name | uppercase}} Details</h2>
+                        <div><span class="card-text">id: </span>{{hero.id}}</div>
+                        <div class="mb-3">
+                            <label for="hero-name" class="form-label">Hero name: </label>
+                            <input id="hero-name" [(ngModel)]="hero.name" class="form-control" placeholder="name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
