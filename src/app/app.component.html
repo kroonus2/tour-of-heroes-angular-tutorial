@@ -1,3 +1,8 @@
 <h1 class="text-center border-bottom mb-3">{{title}}</h1>
-<app-heroes></app-heroes>
+<nav>
+    <a routerLink="/dashboard" class="btn btn-outline-primary mx-3">Dashboard</a>
+    <a routerLink="/heroes" class="btn btn-outline-primary ">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>
+<!-- Last Class -> https://angular.io/tutorial/tour-of-heroes/toh-pt5 -->
