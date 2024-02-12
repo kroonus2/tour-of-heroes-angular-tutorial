@@ -1,6 +1,5 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
-        {{hero.name}}
-    </a>
+<h2 class="text-center mb-3">Top Heroes</h2>
+<div class="d-flex flex-wrap justify-content-around" style="max-width: 1000px; margin: auto;">
+    <a *ngFor="let hero of heroes" class="btn btn-lg btn-secondary px-5"
+        [routerLink]="'/detail/' + hero.id">{{hero.name}}</a>
 </div>
