@@ -2,12 +2,11 @@
     <h2 class="text-center">My Heroes</h2>
     <ul class="list-unstyled row g-2 mt-5">
         <li *ngFor="let hero of heroes" class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)"
+            <a routerLink="/detail/{{hero.id}}"
                 class="btn btn-secondary d-flex flex-row align-items-stretch houver p-0 active">
                 <span class="badge px-3 bg-primary rounded-start">{{hero.id}}</span>
                 <span class="name mx-3 align-self-center">{{hero.name}}</span>
-            </button>
+            </a>
         </li>
     </ul>
-    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 </div>
