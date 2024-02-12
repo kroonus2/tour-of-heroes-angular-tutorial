@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { MessagesComponent } from './components/messages/messages.component';
 
@@ -9,7 +9,8 @@ import { MessagesComponent } from './components/messages/messages.component';
   imports: [
     RouterOutlet,
     HeroesComponent,
-    MessagesComponent],
+    MessagesComponent,
+    RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
